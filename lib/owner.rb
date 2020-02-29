@@ -58,7 +58,7 @@ end
   def sell_pets
    # binding.pry
  
-      name_array.each do |pet|
+      @pets.each do |pet|
         pet.mood = "nervous"
         name_array.delete(pet)
       
