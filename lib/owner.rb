@@ -70,6 +70,11 @@ end
     "I have #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
   end
 
+def feed_cats
+   @pets[:cats].each do |cat|
+      cat.mood = "happy"
+    end
+end
 
   def self.reset_all
     self.all.clear
