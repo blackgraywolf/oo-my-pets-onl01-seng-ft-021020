@@ -66,6 +66,10 @@ end
     @pets
   end
 
+  def list_pets
+    "I have #{@pets[:dogs].length} dog(s), and #{@pets[:cats].length} cat(s)."
+  end
+
 
   def self.reset_all
     self.all.clear
